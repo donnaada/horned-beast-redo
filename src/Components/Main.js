@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import hornedBeasts from '../hornedBeasts.json';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import HornedBeasts from './HornedBeasts';
 
 class Main extends Component {
     render() { 
-        const beasts = hornedBeasts;
+        
+        const beasts = this.props.beasts;
 
         return (
             <Container>
